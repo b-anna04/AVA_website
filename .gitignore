@@ -1,0 +1,42 @@
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+
+# Dependencies (ha használsz Composert)
+vendor/
+
+# Cache
+.cache/
+cache/
+
+# Local configuration
+config.local.php
+
+# Database backups
+*.sql
+*.sqlite
+*.db
+
+# Build files
+/dist/
+/build/

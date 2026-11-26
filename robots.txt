@@ -1,0 +1,12 @@
+User-agent: *
+
+Disallow: /admin/
+Disallow: /pages/
+
+Allow: /
+Allow: /index
+Allow: /edzesek
+Allow: /kapcsolat
+Allow: /sitemap.xml
+
+Sitemap: https://www.alfoldvivoakademia.hu/sitemap.xml

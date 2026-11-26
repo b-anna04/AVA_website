@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+.login-container input {
+    padding: 10px 0 10px 10px;
+    width: 290px;
+    margin: 5px 0 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.login-container button {
+    margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #293b87;
+    color: white;
+    font-size: 16px;
+}
+.error {
+    color: red;
+    font-size: 14px;
+}
+.welcome {
+    text-align: center;
+}
+.upload-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-items: center;
+}
+.upload-container input {
+    padding: 10px 0 10px 10px;
+    width: 290px;
+    margin: 5px 0 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.upload-container button {
+    display: block;
+    margin: 5px auto; /* Középre igazítja a gombot */
+    font-size: larger;
+    background-color: #293b87;
+    border: none;
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.upload-container button:hover {
+    background-color: #293a87dc;
+}
+
+
+.logout{
+    color: #E52020;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.pici-kep{
+    max-height: 80px;
+}
+
+/* Galéria fő konténer */
+.gallery-container {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Galéria rugalmas gridben */
+.gallery-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Képkártya stílus */
+.gallery-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Kép méret és formázás */
+.pici-kep {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Képcím */
+.gallery-item span {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Törlés gomb */
+.delete-btn {
+    background: #E52020;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.delete-btn:hover {
+    background: #cc0000;
+}
+
+/* Reszponzivitás kisebb képernyőkre */
+@media (max-width: 768px) {
+    .gallery-div {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+.cim{
+    font-size: 0.4em;
+}
+
+
+/* Hírek fő konténer */
+.news-container {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Rugalmas grid a hírekhez */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Rugalmas oszlopok */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Hírek kártya */
+.news-card-wrapper {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 230px;
+    position: relative;
+}
+
+/* Hír kép fix méretre */
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Hír cím a képen */
+.news-card h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hírek cím és dátum */
+.news-card h5 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.news-card p {
+    font-size: 0.9em;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Törlés gomb */
+.delete-news-btn {
+    background: #E52020;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+/* Törlés gomb hover */
+.delete-news-btn:hover {
+    background: #cc0000;
+}
+
+/* Reszponzivitás kisebb képernyőkre */
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+.vissza{
+    display: block;
+    margin: 20px auto; /* Középre igazítja a gombot */
+    font-size: larger;
+    background-color: #293b87;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+}
